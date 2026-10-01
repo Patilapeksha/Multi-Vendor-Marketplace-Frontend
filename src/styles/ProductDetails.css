@@ -1,0 +1,671 @@
+/* =========================================
+   PRODUCT DETAILS PAGE
+========================================= */
+
+.product-details-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #111827;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.product-details-header {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 55%, #3b82f6 100%);
+  color: #ffffff;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 4px 18px rgba(37, 99, 235, 0.18);
+}
+
+.product-details-header h1 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 750;
+  letter-spacing: -0.3px;
+}
+
+.product-details-header p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.product-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.product-header-actions button {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.97);
+  color: #1d4ed8;
+  padding: 9px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-header-actions button:hover {
+  background: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.product-details-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 34px 24px 50px;
+}
+
+
+/* =========================================
+   PRODUCT MAIN CARD
+========================================= */
+
+.product-main-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 42px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.product-main-image {
+  width: 100%;
+  height: 440px;
+  background: #f1f5f9;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-main-image:hover img {
+  transform: scale(1.025);
+}
+
+.product-main-placeholder {
+  font-size: 90px;
+  opacity: 0.65;
+}
+
+
+/* =========================================
+   PRODUCT INFORMATION
+========================================= */
+
+.product-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.product-details-category {
+  display: inline-flex;
+  align-self: flex-start;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.product-main-info h2 {
+  margin: 0 0 16px;
+  color: #111827;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+}
+
+.product-details-description {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0 0 24px;
+}
+
+.product-details-price {
+  color: #111827;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.product-details-stock {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 7px 11px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 650;
+  margin-bottom: 22px;
+}
+
+
+/* =========================================
+   ADD TO CART
+========================================= */
+
+.add-cart-button {
+  width: 100%;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  padding: 14px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.18);
+}
+
+.add-cart-button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  transform: translateY(-1px);
+  box-shadow: 0 7px 16px rgba(37, 99, 235, 0.25);
+}
+
+.add-cart-button:active {
+  transform: translateY(0);
+}
+
+.add-cart-button:disabled {
+  background: #cbd5e1;
+  color: #64748b;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.review-message {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 11px 13px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.product-details-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: 11px 13px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.product-details-status {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   REVIEWS SECTION
+========================================= */
+
+.reviews-section {
+  margin-top: 34px;
+}
+
+.reviews-section > h2 {
+  margin: 0 0 18px;
+  color: #111827;
+  font-size: 22px;
+  font-weight: 750;
+}
+
+
+/* =========================================
+   REVIEW FORM
+========================================= */
+
+.review-form-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.05);
+  margin-bottom: 22px;
+}
+
+.review-form-card h3 {
+  margin: 0 0 20px;
+  color: #111827;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.review-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.review-form-card label {
+  color: #374151;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+
+/* =========================================
+   STAR RATING
+========================================= */
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 2px 0 12px;
+}
+
+.star {
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 31px;
+  line-height: 1;
+  padding: 2px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.star.active {
+  color: #f59e0b;
+}
+
+.star:hover {
+  color: #f59e0b;
+  transform: scale(1.08);
+}
+
+
+/* =========================================
+   REVIEW TEXTAREA
+========================================= */
+
+.review-form-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 110px;
+  resize: vertical;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+  border-radius: 9px;
+  padding: 12px 13px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.review-form-card textarea::placeholder {
+  color: #9ca3af;
+}
+
+.review-form-card textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================
+   SUBMIT REVIEW
+========================================= */
+
+.submit-review-button {
+  margin-top: 8px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-review-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.submit-review-button:active {
+  transform: translateY(0);
+}
+
+.submit-review-button:disabled {
+  background: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================================
+   REVIEWS LIST
+========================================= */
+
+.reviews-list {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.05);
+}
+
+.reviews-list h3 {
+  margin: 0 0 5px;
+  color: #111827;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.no-reviews {
+  color: #64748b;
+  background: #f8fafc;
+  border-radius: 9px;
+  padding: 22px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   INDIVIDUAL REVIEW
+========================================= */
+
+.review-card {
+  border-top: 1px solid #e5e7eb;
+  padding: 21px 0;
+}
+
+.review-card:first-of-type {
+  margin-top: 10px;
+}
+
+.review-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.review-card-header strong {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.review-card-header span {
+  color: #94a3b8;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.review-stars {
+  color: #f59e0b;
+  margin-top: 5px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.review-card p {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 12px 0 13px;
+}
+
+
+/* =========================================
+   DELETE REVIEW
+========================================= */
+
+.delete-review-button {
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #be123c;
+  padding: 7px 11px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-review-button:hover {
+  background: #ffe4e6;
+  border-color: #fda4af;
+}
+
+
+/* =========================================
+   BOTTOM ACTIONS
+========================================= */
+
+.product-details-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.product-details-actions button {
+  border: 1px solid #dbe3ef;
+  background: #ffffff;
+  color: #2563eb;
+  padding: 11px 17px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-details-actions button:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .product-details-header {
+    padding: 18px 25px;
+  }
+
+  .product-main-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .product-main-image {
+    height: 380px;
+  }
+
+  .product-main-info h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .product-details-header {
+    padding: 17px 18px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-details-header h1 {
+    font-size: 20px;
+  }
+
+  .product-header-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  .product-header-actions button {
+    padding: 9px 5px;
+    font-size: 11px;
+  }
+
+  .product-details-container {
+    padding: 20px 14px 35px;
+  }
+
+  .product-main-card {
+    padding: 16px;
+    border-radius: 13px;
+    gap: 22px;
+  }
+
+  .product-main-image {
+    height: 270px;
+    border-radius: 10px;
+  }
+
+  .product-main-placeholder {
+    font-size: 70px;
+  }
+
+  .product-main-info h2 {
+    font-size: 24px;
+  }
+
+  .product-details-description {
+    font-size: 14px;
+  }
+
+  .product-details-price {
+    font-size: 25px;
+  }
+
+  .review-form-card,
+  .reviews-list {
+    padding: 18px;
+    border-radius: 13px;
+  }
+
+  .review-card-header {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .review-card-header span {
+    white-space: normal;
+  }
+
+  .star {
+    font-size: 29px;
+  }
+
+  .product-details-actions {
+    flex-direction: column;
+  }
+
+  .product-details-actions button {
+    width: 100%;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .product-header-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .product-header-actions button {
+    width: 100%;
+  }
+
+  .product-main-image {
+    height: 230px;
+  }
+
+  .product-main-info h2 {
+    font-size: 21px;
+  }
+
+  .product-details-price {
+    font-size: 23px;
+  }
+}
